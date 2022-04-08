@@ -1,0 +1,111 @@
+.main {
+    background-color: #e93225;
+}
+
+.main__top {
+    padding-top: 40px;
+    margin-bottom: 10px;
+
+}
+
+.main__select {
+    margin-bottom: 10px;
+}
+
+.main__select select {
+    padding: 2px 5px;
+    background-color: #e93225;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+
+.main__select select:focus {
+    border: 2px solid white;
+
+}
+
+.main__select label {
+    margin-right: 10px;
+}
+
+.main__curent-number p:nth-child(2) {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+.main__select,
+.main__curent-number {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main__center {
+    margin-bottom: 40px;
+}
+
+.main__center-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main__center-title h2 {
+    background-color: #181506;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #e93225;
+    font-weight: 600;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.main__center-container {
+    background-color: white;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 7px;
+    overflow-y: auto;
+
+
+}
+
+
+.main__center-chessman {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+
+}
+
+.main__bottom {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.main__bottom-button button {
+    border: none;
+    outline: none;
+    background-color: #f2d239;
+    color: #e93225;
+    padding: 5px 20px;
+    font-size: 27px;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.main__bottom-button button:hover {
+    background-color: #cfb532;
+}
+
+@media screen and (max-width : 768px) {
+    .main__bottom-button button {
+        padding: 5px 18px;
+        font-size: 24px;
+    }
+}

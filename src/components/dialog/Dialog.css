@@ -1,0 +1,66 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dialog>div {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.dialog>div>div {
+    text-align: center;
+}
+
+.dialog h3 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dialog button {
+    outline: none;
+    border: none;
+    padding: 5px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.dialog button:nth-child(1) {
+    background-color: red;
+}
+
+.dialog button:nth-child(1):hover {
+    background-color: rgb(206, 8, 8);
+}
+
+.dialog button:nth-child(2) {
+    background-color: green;
+}
+
+.dialog button:nth-child(2):hover {
+    background-color: rgb(4, 102, 4);
+}
+
+@media screen and (max-width : 768px) {
+    .dialog>div {
+        width: 300px;
+    }
+
+    .dialog h3 {
+        font-size: 20px;
+    }
+}
