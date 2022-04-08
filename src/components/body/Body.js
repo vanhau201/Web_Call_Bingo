@@ -74,13 +74,13 @@ const Body = () => {
         if (music === 1) {
             endTime = time_music1[1]
             time = time_music1
-            audio.src = "../assets/loto1.mp3"
+            audio.src = "../assets/loto01.mp3"
             deplay = 3
         }
         else if (music === 2) {
             endTime = time_music2[1]
             time = time_music2
-            audio.src = "../assets/loto2.mp3"
+            audio.src = "../assets/loto02.mp3"
             deplay = 4
         }
 
