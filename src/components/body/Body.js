@@ -29,7 +29,7 @@ const Body = () => {
     }
     const time_music2 = {
         1: 19, 2: 38, 3: 74.5, 4: 98.7, 5: 127, 6: 156, 7: 177, 8: 199, 9: 227,
-        10: 248.2, 11: 269, 12: 300.4, 13: 327, 14: 354, 15: 379, 16: 416, 17: 446, 18: 487.7, 19: 515,
+        10: 248.2, 11: 268.9, 12: 300.4, 13: 327, 14: 354, 15: 379, 16: 416, 17: 446, 18: 487.7, 19: 515,
         20: 530, 21: 565, 22: 578, 23: 611.5, 24: 642, 25: 680.7, 26: 740, 27: 763.7, 28: 782, 29: 808,
         30: 833.8, 31: 851.5, 32: 912, 33: 925, 34: 962, 35: 992, 36: 1015.1, 37: 1036.5, 38: 1096.5, 39: 1131,
         40: 1166, 41: 1211.4, 42: 1250.5, 43: 1281.8, 44: 1308.5, 45: 1349.5, 46: 1388, 47: 1421.8, 48: 1466, 49: 1506,
@@ -93,13 +93,13 @@ const Body = () => {
                 }
             }
             if (audio.currentTime >= endTime) {
-                console.log("ok pause")
+
                 numbers_random = randomNumbers()
-                console.log(numbers_random)
+
                 if (numbers_random) {
                     audio.currentTime = time[numbers_random]
                     endTime = time[numbers_random + 1]
-                    console.log("endtime", endTime)
+
                 }
                 else {
                     audio.pause()
@@ -116,7 +116,6 @@ const Body = () => {
 
         // remove event (cleanup function)
         return () => {
-            console.log("cleanup function")
             audio.removeEventListener("timeupdate", handlePlayMusic)
         }
 
