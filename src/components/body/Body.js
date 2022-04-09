@@ -80,7 +80,7 @@ const Body = () => {
         else if (music === 2) {
             endTime = time_music2[1]
             time = time_music2
-            audio.src = "../assets/loto02.mp3"
+            audio.src = "https://vnso-zn-15-tf-mp3-s1-zmp3.zmdcdn.me/678d6d3e087ae124b86b/1908856412155800278?authen=exp=1649657351~acl=/678d6d3e087ae124b86b/*~hmac=7ccd3a43b19ce3b3e5b280e3f7104e2b&fs=MTY0OTQ4NDU1MTk4OHx3ZWJWNnwxMDEwNzkyNzmUsIC1fDE0LjIzNC4xMDUdUngMjEw"
             deplay = 4
         }
 
