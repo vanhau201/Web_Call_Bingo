@@ -105,7 +105,7 @@
 
 @media screen and (max-width : 768px) {
     .main__bottom-button button {
-        padding: 5px 18px;
-        font-size: 24px;
+        padding: 5px 15px;
+        font-size: 22px;
     }
 }
