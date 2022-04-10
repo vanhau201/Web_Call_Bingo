@@ -99,9 +99,9 @@
     cursor: pointer;
 }
 
-.main__bottom-button button:hover {
+/* .main__bottom-button button:hover {
     background-color: #cfb532;
-}
+} */
 
 @media screen and (max-width : 768px) {
     .main__bottom-button button {
